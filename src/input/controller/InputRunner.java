@@ -1,13 +1,13 @@
-package string.controller;
+package input.controller;
 
-public class StringRunner
+public class InputRunner
 {
 	public static void main (String [] args)
 	{
 		//Thing myThing = new thing();
 		//myThing.start();
 		
-		StringController myInput = new StringController();
+		PopupController myInput = new PopupController();
 		myInput.start();
 	}
 }
