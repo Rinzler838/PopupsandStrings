@@ -9,5 +9,6 @@ public class InputRunner
 		
 		PopupController myInput = new PopupController();
 		myInput.start();
+		
 	}
 }

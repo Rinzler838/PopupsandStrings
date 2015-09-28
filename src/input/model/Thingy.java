@@ -14,13 +14,15 @@ public class Thingy
 	
 	public Thingy()
 	{
-		name = "";
-		age = -99;
-		weight -.008;
+		name = name;
+		age = age;
+		weight = weight;
 	}
 	
 	public Thingy(String name, int age, double weight)
 	{
+		//this. refers to the current instance of this object (A thingy)
+		
 		this.name = name;
 		this.age = age;
 		this.weight = weight;
