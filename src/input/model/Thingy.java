@@ -14,9 +14,9 @@ public class Thingy
 	
 	public Thingy()
 	{
-		name = name;
-		age = age;
-		weight = weight;
+		name = "";
+		age = -99;
+		weight = -.008;
 	}
 	
 	public Thingy(String name, int age, double weight)
@@ -40,4 +40,22 @@ public class Thingy
 	{
 		return weight;
 	}
+
+	public void setName()
+	{
+		this.name = name;
+	}
+	
+	public void setAge(int age)
+	{
+		this.age = age;
+	}
+	
+	public void setWeight(double weight)
+	{
+		this.weight = weight;
+	}
+
+	
+	
 }
