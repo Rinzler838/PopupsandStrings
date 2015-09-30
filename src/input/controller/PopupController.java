@@ -31,26 +31,29 @@ public class PopupController
 		
 		myPopups.showResponse("You typed in: " + myAge);
 		
+		String userNumber = myPopups.grabAnswer("Type in your age");
+		int myAge = Integer.parseInt(userNumber);
+		
 		String tempWeight= myPopups.grabAnswer("Type in your weight");
 		double myWeight = Double.parseDouble(tempWeight);
 		
-		String temp = myPopups.grabAnswer("Type in your age");
-		int myAge;
-		
-		while(!isInteger(temp))
+		while(!isInteger(userNumber))
 		{
-			temp = myPopups.grabAnswer("Type in a positive integer for your age!!!");
+			userNumber = myPopups.grabAnswer("Type in a positive integer for your age!!!");
 		}
-		
-		if(isInteger(temp))
+		if(isInteger(userNumber))
 		{
-			myAge = Integer.parseInt(temp);
+			myAge = Integer.parseInt(userNumber);
 		}
 		else
 		{
 			myAge = -9999999;
 		}
-		
+			
+		while(!isInteger(tempWeight))
+		{
+			temp = myPopups.grabAnswer("Type in a positive integer for your weight!!!");
+		}
 		if(isDouble(tempWeight))
 		{
 			myWeight = Double.parseDouble(tempWeight);
@@ -62,9 +65,9 @@ public class PopupController
 				
 		myPopups.showResponse("You typed in: " + myWeight);
 	
-		myTestThing = new Thingy(myName, myAge, myWeight);
+		myTestThingy = new Thingy(myName, myAge, myWeight);
 	}
-
+	
 	private boolean isInteger(String input)
 	{
 		boolean isInt = false;
@@ -97,10 +100,4 @@ public class PopupController
 		
 		return isDouble;
 	}
-	
-	
-	
-	
-	
-	
 }

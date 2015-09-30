@@ -12,12 +12,23 @@ public class Thingy
 	private int age;
 	private double weight;
 	
+	/**
+	 * Sets the default values for each value; name, age, and weight. 
+	 */
+	
 	public Thingy()
 	{
 		name = "";
 		age = -99;
 		weight = -.008;
 	}
+	
+	/**
+	 * 
+	 * @param name
+	 * @param age
+	 * @param weight
+	 */
 	
 	public Thingy(String name, int age, double weight)
 	{
