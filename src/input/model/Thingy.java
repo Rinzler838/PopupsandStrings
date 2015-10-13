@@ -67,6 +67,4 @@ public class Thingy
 		this.weight = weight;
 	}
 
-	
-	
 }
